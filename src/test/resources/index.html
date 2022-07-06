@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI - Formulario</title>
+</head>
+<body class="pagina">
+
+    <header class="header">
+        <div class="container-fluid">
+        </div>
+    </header>
+
+    <article class="container formulario">
+        <section class="dadosPessoais">
+            <form class="form" action="/web/tabela.html" method="get">
+                <div class="form-group">
+                    <h5>DADOS PESSOAIS</h5>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <label for="nome">Nome *: </label>
+                            <input type="text" class="form-control nome" name="nome" id="nome" placeholder="Digite seu nome (Campo Obrigatório)" style="border-color: #AD68E6;">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <label for="dataNascimento">Data de Nascimento</label>
+                            <input type="date" class="form-control" name="dataNascimento" id="dataNascimento" placeholder="dd/mm/aaaa">
+                        </div>
+                    </div>
+                    <div class="form-check col-lg-8">
+                        <label class="form-check-label" for="sexo">Sexo:</label><br>
+                        <input type="radio" class="form-check-input" name="sexo" id="masculino" value="masculino">Masculino<br>  
+                        <input type="radio" class="form-check-input" name="sexo" id="feminino" value="feminino">Feminino<br><br>
+                    </div>
+                    <div class="col-lg-6">
+                            <label for="estadoCivil">Estado Civil:</label><br/>
+                            <select name="estadoCivil" id="estadoCivil" class="form-select estadoCivil" style="border-color: #AD68E6; background-color: rgba(242, 226, 255, 1)">
+                                <option selected>Entre com uma opção</option>
+                                <option value="Solteiro">Solteiro</option>
+                                <option value="Casado">Casado</option>
+                                <option value="Divorciado">Divorciado</option>
+                                <option value="Viúvo">Viúvo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <h5>CONTATOS</h5>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label for="telefone">Telefone *</label>
+                            <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="(XX)XXXXX-XXXX (Campo obrigatório)">
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="digite um email valido">
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="redesSociais">Redes Sociais</label>
+                            <input type="text" class="form-control redesSociais" name="redesSociais" id="redesSociais">
+                        </div>
+                    </div>
+                    <h5>ENDEREÇO</h5>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" name="endereco" id="endereco">
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" class="form-control" name="complemento" id="complemento">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" class="form-control" name="bairro" id="bairro">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" class="form-control" name="cidade" id="cidade">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for="estado">Estado:</label><br/>
+                            <select class="form-select" id="estado" name="estado" style="border-color: #AD68E6; background-color: rgba(242, 226, 255, 1)">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="cep">Cep</label>
+                            <input type="text" class="form-control" name="cep" id="cep">
+                        </div>
+
+                        <h5>AVALIAÇÃO INICIAL</h5>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="peso">Peso</label>
+                                <input type="text" class="form-control" name="peso" id="peso">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="altura">Altura</label>
+                                <input type="text" class="form-control" name="altura" id="altura">
+                            </div>
+                        </div>
+
+                        <div class="row avaliacao">
+                            <div class="row col-lg-6">
+                                <div class="col-lg-6">
+                                    <label for="torax">Tórax</label> 
+                                    <input type="text" class="form-control" name="torax" id="torax">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="cintura">Cintura</label> 
+                                    <input type="text" class="form-control" name="cintura" id="cintura">
+                                </div>
+                            </div>
+                            <div class="row col-lg-6">
+                                <div class=" col-lg-6">
+                                    <label for="abdome">Abdome</label> 
+                                    <input type="text" class="form-control" name="abdome" id="abdome">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="quadril">Quadril</label> 
+                                    <input type="text" class="form-control" name="quadril" id="quadril">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row medidas2 avaliacao">
+                            <div class="row col-lg-6 ">
+                                <label for="antebraco">Ante Braço</label>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="antebracoDireito" id="antebracoDireito" placeholder="Direito">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="antebracoEsquerdo" id="antebracoEsquerdo" placeholder="Esquerdo">
+                                    </div>
+                            </div>
+                            <div class="row col-lg-6">
+                                <label for="braco">Braço</label>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="bracoDireito" id="bracoDireito" placeholder="Direito">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="bracoEsquerdo" id="bracoEsquerdo" placeholder="Esquerdo">
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row medidas avaliacao">
+                            <div class="row col-lg-6">
+                                <label for="coxa">Coxa</label>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="coxaDireita" id="coxaDireita" placeholder="Direito">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="coxaEsquerda" id="coxaEsquerda" placeholder="Esquerdo">
+                                    </div>
+                            </div>
+                            <div class="row col-lg-6">
+                                <label for="panturrilha">Panturrilha</label>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="panturrilhaDireito" id="panturrilhaDireito" placeholder="Direito">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="panturrilhaEsquerdo" id="panturrilhaEsquerdo" placeholder="Esquerdo">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="botoes">
+                    <input type="button" class="btn btn-primary form botaoSalvar" style="background-color: rgba(111, 32, 176, 1); color: white;" value="Enviar" onclick="enviar()">
+                    <input type="button" class="btn btn-primary form botaoSalvar" style="background-color: rgba(111, 32, 176, 1); color: white;" value="Exibir" onclick="exibir()">
+                </div>
+            </form>
+
+        </section>
+    </article>
+
+    <article class="container">
+        <div class="resultado">
+        </div>
+    </article>
+
+    <article class="container">
+        <div class="exibirResultado">
+        </div>
+    </article>
+
+    <footer class=" rodape">
+        <p class="container">Produzido por Márcio Nascimento</p>
+    </footer>
+
+     
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!--BOOTSTRAP-->    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!--FONT ROBOTO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--script-->
+        <script src="script/enviar.js"></script>
+        <script src="script/exibir.js"></script>
+</body>
+</html>

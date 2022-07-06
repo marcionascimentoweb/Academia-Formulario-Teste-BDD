@@ -1,0 +1,118 @@
+.pagina{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 226, 255, 1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.header{
+    height: 20px;
+    background-color: rgba(111, 32, 176, 1);
+}
+
+h5{
+    color: black;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.botoes{
+    padding: 20px;
+}
+
+.botaoSalvar{
+    background-color: rgba(111, 32, 176, 1) !important;
+}
+
+.dadosPessoais{
+    padding: 1px;
+}
+
+.sexo{
+    margin-left: 20px;
+}
+.form-check-input:checked{
+    background-color: rgba(111, 32, 176, 1) !important;
+}
+
+label{
+    margin-top: 7px;
+}
+
+.medidas{
+    padding-bottom: 10px;
+}
+
+.medidas2{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.avaliacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+input{
+    border-color: #AD68E6 !important;
+    background-color: rgba(242, 226, 255, 1) !important;
+    
+}
+
+input:hover{
+    color: #AD68E6;
+}
+
+input::placeholder{
+color: #AD68E6 !important;
+}
+
+option{
+    color:#AD68E6;
+    background-color:white;
+}
+
+select{
+    color: aqua;
+    background-color: chartreuse;
+}
+
+.resultado{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.exibirResultado{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.teste{
+    font-weight: bolder;
+    color: aqua;
+}
+
+.rodape{
+    width: 100%;
+    height: 60px;
+    background-color: #AD68E6;
+    color: white;
+    margin: 0px auto;
+    text-align: center;
+}
+
